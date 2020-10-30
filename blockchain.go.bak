@@ -1,12 +1,12 @@
 package main
 
 type Blockchain struct {
-	blocks		[]*Block
+	blocks []*Block
 }
 
 // 새로운 블록체인
 func NewBlockchain() *Blockchain {
-	return &Blockchain{[]*Block{NewGenesisBlock()}}
+	return &Blockchain{ blocks: []*Block{NewGenesisBlock()}}
 }
 
 // 구조체의 메소드
